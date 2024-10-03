@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>starRating</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    *{
+margin :0;
+padding :0;
+box-sizing: border-box;
+    }
+    
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        border-color: rgba(88,88,157,0.7);
+        background-color: blue;
+    }
+
+    input{
+        display: none;
+    }
+
+    label{
+        cursor: pointer;
+    }
+
+    input:checked+label~label{
+        color: #dddddd;
+    }
+
+    input:hover+label~label{
+        color: #dddddd;
+    }
+
+    label:active{
+        transform: scale(0.7);
+        transition: 0.3s;
+    }
+
+    .stars{
+        width: 400px;
+        height: 100px;
+        background-color: white;
+        border-radius: 5px;
+        font-size: 25px;
+        text-align: center;
+        padding: 40px 0;
+        color: orange;
+    }
+</style>
+</head>
+<body>
+    <div class="stars">
+     <input type="radio"  name="rating" id="star1">
+     <label for="star1" class="fa fa-star"></label>
+     <input type="radio"  name="rating" id="star2">
+     <label for="star2" class="fa fa-star"></label>
+     <input type="radio"  name="rating" id="star3">
+     <label for="star3" class="fa fa-star"></label>
+     <input type="radio"  name="rating" id="star4">
+     <label for="star4" class="fa fa-star"></label>
+     <input type="radio"  name="rating" id="star5">
+     <label for="star5" class="fa fa-star"></label>
+    </div>   
+</body>
+</html>
